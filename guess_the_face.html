@@ -21,8 +21,9 @@
   <h3 class="btn btn-default heading">Family RECOGNITION<sup><img id ="logo"src = "family_1f46a.png"></sup></h3>
         <br><br>
   
-        <p style="font-size: 22px;">Model is trained to identify my Family members: </p>
+        <p style="font-size: 22px;">Identify my Family members: </p>
         <b class="name_of_objects">
+          <h3>Options:</h3>
             Dad
              <hr>
             Mom
@@ -31,23 +32,25 @@
              <hr>
         </b>
   
-        <label>Webcam View - </label>
-        <div id = "camera"></div>
+        <label>Family Face Will apear here- </label>
+        <img id ="image"src = "10035-family.png">
         <br><br>
         <div id="result"></div>
         <br><br>
-        <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+        <button onclick="start();" class="btn btn-success">Show Image</button>
+        <br><br>
+       <input id ="guess" placeholder="Guess the person">
         <br><br>
         <button onclick="check();" class="btn btn-success">Identify Image</button>
         <br><br>
-        <p style="font-size: 22px;">Object :  <span id="result_object_name"></span></p>
-        <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span></span> </p>
+        <button onclick="back();" class="btn btn-success">Go Back</button>
         <br><br>
-        <button onclick="forward();" class="btn btn-primary">Guess the Face!</button>
-      </center>
   
+    
+      </center>
+      <script src="face.js"></script>
     </div>
-  <script src="main.js"></script>
+
   
     </body>
   </html>
